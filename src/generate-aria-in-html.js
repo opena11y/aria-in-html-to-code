@@ -12,7 +12,7 @@ import util  from 'util';
 import fetch from 'node-fetch';
 import HTMLParser from 'node-html-parser';
 
-const exportFilename = './src/aria-in-html/ariaInHtmlInfo';
+const exportFilename = './releases/ariaInHtmlInfo';
 const exportPrefix = '/* generated file, use npm run aria-in-html */\nexport const ariaInHTMLInfo = ';
 const exportSuffix = `;${os.EOL}`;
 
@@ -364,8 +364,6 @@ function getAriaInformation(dom) {
   ariaInfo.title = dom.querySelector('h1.title').textContent;
   ariaInfo.status = dom.querySelector('h1.title + p').textContent.trim().replace('\n', '');
   ariaInfo.reference = ariaInHTML;
-  ariaInfo.anyRoleAllowed = false;
-  ariaInfo.noRoleAllowed = false;
   ariaInfo.elementInfo = {};
 
   getElementInfo(dom, ariaInfo.elementInfo);

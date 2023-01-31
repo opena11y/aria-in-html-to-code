@@ -1,7 +1,7 @@
 {
   "name": "aria-in-html-to-code",
   "version": "1.0",
-  "description": "Javascript library for evaluating WCAG and ARIA conformance",
+  "description": "Parses the ARIA in HTML Specification information into a machine usable form as a JSON object and a javascirpt include file.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opena11y/aria-in-html-to-code.git"
@@ -30,5 +30,6 @@
   "dependencies": {
     "gulp-eslint": "^6.0.0",
     "promise": "^8.1.0"
-  }
+  },
+  "type": "module"
 }
