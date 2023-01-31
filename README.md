@@ -32,8 +32,8 @@ The primary property in the Javascript Object is the `elementInfo` object.  The 
 | `tagName`       | tag name |
 | `defaultRole`   | The default [ARIA role](https://www.w3.org/TR/wai-aria/#role_definitions) for the tag  |
 | `noRoleAllowed` | True if no other ARIA roles are allowed on the tag, otherwise false  |
-| `allowedRoles`  | An array of allowed roles for the tag  |
-| `id`            | Unique identifier for the row in the ARIA in HTML table, based on tag name and attributes  |
+| `allowedRoles`  | An array of allowed ARIA roles for the tag  |
+| `id`            | Unique identifier for the row in the HTML Tag Name table, based on tag name and any required attributes  |
 | `attr1`         | Optional required attribute with an optional value |
 | `attr2`         | Optional required attribute with an optional value |
 
