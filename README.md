@@ -20,8 +20,8 @@ These steps assume you have both `git` and `node.js` installed on your computer.
 
 The following two files are created in the `releases` directory:
 
-* `[ariaInHtmlInfo.json](releases/ariaInHtmlInfo.js.json)`
-* `[ariaInHtmlInfo.js](releases/ariaInHtmlInfo.js.js)`
+* [ariaInHtmlInfo.json](releases/ariaInHtmlInfo.js.json)
+* [ariaInHtmlInfo.js](releases/ariaInHtmlInfo.js.js)
 
 ## Organization of the Javascript Object
 
