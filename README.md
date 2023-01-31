@@ -1,6 +1,6 @@
 # ARIA in HTML to Code Generator
 
-This utility parses the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification and generates a Javascript Object representing the information in the specification.  The object is available as a [JSON object](releases/ariaHTMLInfo.json) or as a [Javascript include file](releases/ariaHTMLInfo.js).
+This utility parses the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification and generates a Javascript Object representing the information in the specification.  The object is available as a [JSON object](releases/ariaHtmlInfo.json) or as a [Javascript include file](releases/ariaHtmlInfo.js).
 
 ## Creating the JSON and JS files
 
@@ -20,8 +20,8 @@ These steps assume you have both `git` and `node.js` installed on your computer.
 
 The following two files are created in the `releases` directory:
 
-* `[ariaHTMLInfo.json](releases/ariaHTMLInfo.json)`
-* `[ariaHTMLInfo.js](releases/ariaHTMLInfo.js)`
+* `[ariaHtmlInfo.json](releases/ariaHtmlInfo.json)`
+* `[ariaHtmlInfo.js](releases/ariaHtmlInfo.js)`
 
 ## Organization of the Javascript Object
 
@@ -32,7 +32,7 @@ The primary property in the Javascript Object is the `elementInfo` object.  The 
 | `tagName`       | tag name |
 | `defaultRole`   | The default role for the tag  |
 | `noRoleAllowed` | True if no other roles are allowed on the tag, otherwise false  |
-| `allowedRoles`  | Roles allowed for the tag  |
+| `allowedRoles`  | An array of allowed roles for the tag  |
 | `id`            | Unique identifier for the row in the ARIA in HTML table, based on tag name and attributes  |
 | `attr1`         | Optional required attribute with an optional value |
 | `attr2`         | Optional required attribute with an optional value |
