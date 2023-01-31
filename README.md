@@ -1,6 +1,6 @@
 # ARIA in HTML to Code Generator
 
-This utility parses the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification and generates a Javascript Object representing the information in the specification.  The object is available as a [JSON object](releases/ariaHtmlInfo.json) or as a [Javascript include file](releases/ariaHtmlInfo.js).
+This utility parses the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification and generates a Javascript Object representing the information in the specification.  The object is available as a [JSON object](releases/ariaInHtmlInfo.js.json) or as a [Javascript include file](releases/ariaInHtmlInfo.js.js).
 
 ## Creating the JSON and JS files
 
@@ -20,8 +20,8 @@ These steps assume you have both `git` and `node.js` installed on your computer.
 
 The following two files are created in the `releases` directory:
 
-* `[ariaHtmlInfo.json](releases/ariaHtmlInfo.json)`
-* `[ariaHtmlInfo.js](releases/ariaHtmlInfo.js)`
+* `[ariaInHtmlInfo.js.json](releases/ariaInHtmlInfo.js.json)`
+* `[ariaInHtmlInfo.js.js](releases/ariaInHtmlInfo.js.js)`
 
 ## Organization of the Javascript Object
 
