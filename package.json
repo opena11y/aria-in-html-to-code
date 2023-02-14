@@ -1,6 +1,6 @@
 {
   "name": "aria-in-html-to-code",
-  "version": "1.0",
+  "version": "1.0.beta",
   "description": "Parses the ARIA in HTML Specification information into a machine usable form as a JSON object and a javascirpt include file.",
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/opena11y/aria-in-html-to-code#readme",
   "scripts": {
-    "build": "npm run eslint && npm run bundle",
+    "build": "npm run eslint && npm run aria-in-html",
     "eslint": "eslint src/*.js",
-    "aria-in-html": "node src/aria-in-html/generate-aria-in-html.js"
+    "aria-in-html": "node src/generate-aria-in-html.js"
   },
   "devDependencies": {
     "eslint": "^8.11.0",
@@ -28,7 +28,6 @@
     "node-html-parser": "^3.3.6"
   },
   "dependencies": {
-    "gulp-eslint": "^6.0.0",
     "promise": "^8.1.0"
   },
   "type": "module"

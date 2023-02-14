@@ -12,7 +12,7 @@ import util  from 'util';
 import fetch from 'node-fetch';
 import HTMLParser from 'node-html-parser';
 
-const exportFilename = './releases/ariaInHtmlInfo';
+const exportFilename = './releases/aria-in-html-info';
 const exportPrefix = '/* generated file, use npm run aria-in-html */\nexport const ariaInHTMLInfo = ';
 const exportSuffix = `;${os.EOL}`;
 

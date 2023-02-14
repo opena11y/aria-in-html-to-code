@@ -16,12 +16,12 @@ These steps assume you have both `git` and `node.js` installed on your computer.
 
 ### Step 3: Generating the JSON and JS files
 
-```node src/generate-aria-in-html.js```
+```node run build```
 
 The following two files are created in the `releases` directory:
 
-* [ariaInHtmlInfo.json](releases/ariaInHtmlInfo.json)
-* [ariaInHtmlInfo.js](releases/ariaInHtmlInfo.js)
+* [aria-in-html-info.json](releases/aria-in-html-info.json)
+* [aria-in-html-info.js](releases/aria-in-html-info.js)
 
 ## Organization of the Javascript Object
 
