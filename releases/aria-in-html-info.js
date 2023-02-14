@@ -1,7 +1,7 @@
 /* generated file, use npm run aria-in-html */
 export const ariaInHTMLInfo = {
   title: 'ARIA in HTML',
-  status: 'W3C Recommendation 21 December 2022',
+  status: 'W3C Recommendation 13 February 2023',
   reference: 'https://www.w3.org/TR/html-aria/',
   elementInfo: {
     'a[href]': {
