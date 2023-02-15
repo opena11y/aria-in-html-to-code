@@ -12,8 +12,8 @@ import util  from 'util';
 import fetch from 'node-fetch';
 import HTMLParser from 'node-html-parser';
 
-const exportFilename = './releases/aria-in-html-info';
-const exportPrefix = '/* generated file, use npm run aria-in-html */\nexport const ariaInHTMLInfo = ';
+const exportFilename = './releases/gen-aria-in-html-info';
+const exportPrefix = '/* generated file, use npm run build */\nexport const ariaInHTMLInfo = ';
 const exportSuffix = `;${os.EOL}`;
 
 let ariaInHTML = 'https://www.w3.org/TR/html-aria/';

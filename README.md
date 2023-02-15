@@ -1,4 +1,4 @@
-# ARIA in HTML to Code Generator
+# ARIA in HTML to Code Generator Version 1.0 Beta
 
 This utility parses the [ARIA in HTML](https://www.w3.org/TR/html-aria/) specification and generates a Javascript Object representing the information in HTML Tage Name table in the specification.  The object created is available as a [JSON object](releases/ariaInHtmlInfo.json) or as a [Javascript include file](releases/ariaInHtmlInfo.js).  Note the generator code has some exception clauses due to the complexity of some of the table rows in the specification.  The exceptions need to be verified for any updates to the speficiation.
 
@@ -20,8 +20,8 @@ These steps assume you have both `git` and `node.js` installed on your computer.
 
 The following two files are created in the `releases` directory:
 
-* [aria-in-html-info.json](releases/aria-in-html-info.json)
-* [aria-in-html-info.js](releases/aria-in-html-info.js)
+* [gen-aria-in-html-info.json](releases/gen-aria-in-html-info.json)
+* [gen-aria-in-html-info.js](releases/gen-aria-in-html-info.js)
 
 ## Organization of the Javascript Object
 
