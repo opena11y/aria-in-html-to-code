@@ -1,10 +1,4 @@
-#!/usr/bin/env node
-/*
- *   This content is licensed according to the W3C Software License at
- *   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
- *
- *   File:   reference-tables.js
- */
+/* generate-aria-in-html.js */
 
 import fs    from 'fs';
 import os    from 'os';
@@ -13,7 +7,7 @@ import fetch from 'node-fetch';
 import HTMLParser from 'node-html-parser';
 
 const exportFilename = './releases/gen-aria-in-html-info';
-const exportPrefix = '/* generated file, use npm run build */\nexport const ariaInHTMLInfo = ';
+const exportPrefix = '/* generated file, see https://github.com/opena11y/aria-in-html-to-code */\nexport default const ariaInHTMLInfo = ';
 const exportSuffix = `;${os.EOL}`;
 
 let ariaInHTML = 'https://www.w3.org/TR/html-aria/';

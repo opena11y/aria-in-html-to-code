@@ -1,5 +1,5 @@
-/* generated file, use npm run build */
-export const ariaInHTMLInfo = {
+/* generated file, see https://github.com/opena11y/aria-in-html-to-code */
+export default const ariaInHTMLInfo = {
   title: 'ARIA in HTML',
   status: 'W3C Recommendation 15 February 2023',
   reference: 'https://www.w3.org/TR/html-aria/',
