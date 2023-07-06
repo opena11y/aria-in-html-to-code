@@ -1,6 +1,6 @@
 {
   "name": "aria-in-html-to-code",
-  "version": "1.0.beta",
+  "version": "1.1",
   "description": "Parses the ARIA in HTML Specification information into a machine usable form as a JSON object and a javascirpt include file.",
   "repository": {
     "type": "git",

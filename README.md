@@ -38,4 +38,6 @@ The primary property in the Javascript Object is the `elementInfo` object.  The 
 | `attr2`         | Optional required attribute with an optional value |
 
 
+## History
 
+* 1.1 Updates generated files to ARIA in HTML version 29 June 2023

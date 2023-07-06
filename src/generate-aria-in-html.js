@@ -7,7 +7,7 @@ import fetch from 'node-fetch';
 import HTMLParser from 'node-html-parser';
 
 const exportFilename = './releases/gen-aria-in-html-info';
-const exportPrefix = '/* generated file, see https://github.com/opena11y/aria-in-html-to-code */\nexport default const ariaInHTMLInfo = ';
+const exportPrefix = '/* generated file, see https://github.com/opena11y/aria-in-html-to-code */\nexport const ariaInHTMLInfo = ';
 const exportSuffix = `;${os.EOL}`;
 
 let ariaInHTML = 'https://www.w3.org/TR/html-aria/';
@@ -40,7 +40,6 @@ function getElementInfo(dom, ariaInfo) {
       continue;
     }
 
-    console.log('[tag]: ' + tagName);
 
     let refName = tagName;
     let newInfo = {};
@@ -48,12 +47,14 @@ function getElementInfo(dom, ariaInfo) {
 
     let defaultRole = elem.querySelector("td:nth-child(2) code");
     if (defaultRole && defaultRole.textContent) {
-      defaultRole = defaultRole.textContent.replace('role=', '');
+      defaultRole = defaultRole.textContent.replace('role=', '').trim();
     } else {
-      defaultRole = 'generic';
+      defaultRole = '';
     }
 
     newInfo.defaultRole = defaultRole;
+
+    console.log(`${tagName}: ${defaultRole}`);
 
     newInfo.noRoleAllowed = elem.querySelector("td:nth-child(3) p strong.nosupport") ? true : false;
     newInfo.anyRoleAllowed = elem.querySelector("td:nth-child(3) a[href=#dfn-any-role]") ? true : false;
@@ -167,6 +168,26 @@ function getElementInfo(dom, ariaInfo) {
       captionInfo.hasFigcaption = true;
       ariaInfo['figure[figcaption]'] = captionInfo;
       ariaInfo['figure[figcaption]'].id = 'figure[figcaption]';
+    }
+
+    // Special case list roles
+
+    if (tagName === 'li') {
+      newInfo.defaultRole = 'generic';
+      newInfo.noRoleAllowed = false;
+      newInfo.anyRoleAllowed = true;
+
+      let liInfo = {};
+      liInfo.tagName = 'li';
+      liInfo.defaultRole = 'listitem';
+      liInfo.noRoleAllowed = true;
+      liInfo.anyRoleAllowed = false;
+      liInfo.ownedbyOL = true;
+      liInfo.ownedbyUL = true;
+      liInfo.ownedbyMenu = true;
+      ariaInfo['li[listitem]'] = liInfo;
+      ariaInfo['li[listitem]'].id = 'li[listitem]';
+
     }
 
     // row, th and td element special case

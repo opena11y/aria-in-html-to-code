@@ -1,6 +1,6 @@
 {
     "title": "ARIA in HTML",
-    "status": "W3C Recommendation 15 February 2023",
+    "status": "W3C Recommendation 05 July 2023",
     "reference": "https://www.w3.org/TR/html-aria/",
     "elementInfo": {
         "a[href]": {
@@ -33,7 +33,7 @@
         },
         "abbr": {
             "tagName": "abbr",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "abbr"
@@ -61,7 +61,6 @@
             "allowedRoles": [
                 "button",
                 "link",
-                "generic",
                 "generic"
             ],
             "id": "area"
@@ -101,7 +100,7 @@
         },
         "audio": {
             "tagName": "audio",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -118,7 +117,7 @@
         },
         "base": {
             "tagName": "base",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "base"
@@ -153,7 +152,7 @@
         },
         "br": {
             "tagName": "br",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -170,21 +169,24 @@
             "allowedRoles": [
                 "checkbox",
                 "combobox",
+                "gridcell",
                 "link",
                 "menuitem",
                 "menuitemcheckbox",
                 "menuitemradio",
                 "option",
                 "radio",
+                "slider",
                 "switch",
                 "tab",
+                "treeitem",
                 "button"
             ],
             "id": "button"
         },
         "canvas": {
             "tagName": "canvas",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "canvas"
@@ -198,7 +200,7 @@
         },
         "cite": {
             "tagName": "cite",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "cite"
@@ -212,14 +214,14 @@
         },
         "col": {
             "tagName": "col",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "col"
         },
         "colgroup": {
             "tagName": "colgroup",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "colgroup"
@@ -240,7 +242,7 @@
         },
         "dd": {
             "tagName": "dd",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "dd"
@@ -286,7 +288,7 @@
         },
         "dl": {
             "tagName": "dl",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -299,7 +301,7 @@
         },
         "dt": {
             "tagName": "dt",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -316,7 +318,7 @@
         },
         "embed": {
             "tagName": "embed",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -343,7 +345,7 @@
         },
         "figcaption": {
             "tagName": "figcaption",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -388,8 +390,7 @@
                 "navigation",
                 "region",
                 "role=contentinfo",
-                "role=generic",
-                "generic"
+                "role=generic"
             ],
             "isLandmark": true,
             "id": "footer[contentinfo]"
@@ -414,8 +415,7 @@
                 "navigation",
                 "region",
                 "role=contentinfo",
-                "role=generic",
-                "generic"
+                "role=generic"
             ],
             "id": "footer"
         },
@@ -512,7 +512,7 @@
         },
         "head": {
             "tagName": "head",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "head"
@@ -537,8 +537,7 @@
                 "navigation",
                 "region",
                 "role=contentinfo",
-                "role=generic",
-                "generic"
+                "role=generic"
             ],
             "isLandmark": true,
             "id": "header[banner]"
@@ -563,8 +562,7 @@
                 "navigation",
                 "region",
                 "role=contentinfo",
-                "role=generic",
-                "generic"
+                "role=generic"
             ],
             "id": "header"
         },
@@ -603,7 +601,7 @@
         },
         "iframe": {
             "tagName": "iframe",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -690,14 +688,17 @@
             "allowedRoles": [
                 "checkbox",
                 "combobox",
+                "gridcell",
                 "link",
                 "menuitem",
                 "menuitemcheckbox",
                 "menuitemradio",
                 "option",
                 "radio",
+                "slider",
                 "switch",
                 "tab",
+                "treeitem",
                 "button"
             ],
             "attr1": "type=button",
@@ -720,7 +721,7 @@
         },
         "input[type=color]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=color",
@@ -728,7 +729,7 @@
         },
         "input[type=date]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=date",
@@ -736,7 +737,7 @@
         },
         "input[type=datetime-local]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=datetime-local",
@@ -761,7 +762,7 @@
         },
         "input[type=file]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=file",
@@ -769,7 +770,7 @@
         },
         "input[type=hidden]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=hidden",
@@ -781,20 +782,26 @@
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
+                "button",
+                "checkbox",
+                "gridcell",
                 "link",
                 "menuitem",
                 "menuitemcheckbox",
                 "menuitemradio",
+                "option",
                 "radio",
+                "slider",
                 "switch",
-                "button"
+                "tab",
+                "treeitem"
             ],
             "attr1": "type=image",
             "id": "input[type=image]"
         },
         "input[type=month]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=month",
@@ -810,7 +817,7 @@
         },
         "input[type=password]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=password",
@@ -839,8 +846,9 @@
         "input[type=reset]": {
             "tagName": "input",
             "defaultRole": "button",
-            "noRoleAllowed": true,
+            "noRoleAllowed": false,
             "anyRoleAllowed": false,
+            "allowedRoles": [],
             "attr1": "type=reset",
             "id": "input[type=reset]"
         },
@@ -864,8 +872,9 @@
         "input[type=submit]": {
             "tagName": "input",
             "defaultRole": "button",
-            "noRoleAllowed": true,
+            "noRoleAllowed": false,
             "anyRoleAllowed": false,
+            "allowedRoles": [],
             "attr1": "type=submit",
             "id": "input[type=submit]"
         },
@@ -911,7 +920,7 @@
         },
         "input[type=time]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=time",
@@ -936,7 +945,7 @@
         },
         "input[type=week]": {
             "tagName": "input",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "attr1": "type=week",
@@ -951,48 +960,45 @@
         },
         "kbd": {
             "tagName": "kbd",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "kbd"
         },
         "label": {
             "tagName": "label",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "label"
         },
         "legend": {
             "tagName": "legend",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "legend"
         },
-        "li": {
+        "li[listitem]": {
             "tagName": "li",
             "defaultRole": "listitem",
-            "noRoleAllowed": false,
+            "noRoleAllowed": true,
             "anyRoleAllowed": false,
-            "allowedRoles": [
-                "menuitem",
-                "menuitemcheckbox",
-                "menuitemradio",
-                "option",
-                "none",
-                "presentation",
-                "radio",
-                "separator",
-                "tab",
-                "treeitem",
-                "listitem"
-            ],
+            "ownedbyOL": true,
+            "ownedbyUL": true,
+            "ownedbyMenu": true,
+            "id": "li[listitem]"
+        },
+        "li": {
+            "tagName": "li",
+            "defaultRole": "generic",
+            "noRoleAllowed": false,
+            "anyRoleAllowed": true,
             "id": "li"
         },
         "link": {
             "tagName": "link",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "link"
@@ -1006,14 +1012,14 @@
         },
         "map": {
             "tagName": "map",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "map"
         },
         "mark": {
             "tagName": "mark",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "mark"
@@ -1047,7 +1053,7 @@
         },
         "meta": {
             "tagName": "meta",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "meta"
@@ -1076,14 +1082,14 @@
         },
         "noscript": {
             "tagName": "noscript",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "noscript"
         },
         "object": {
             "tagName": "object",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -1143,14 +1149,14 @@
         },
         "param": {
             "tagName": "param",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "param"
         },
         "picture": {
             "tagName": "picture",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "picture"
@@ -1178,28 +1184,28 @@
         },
         "rp": {
             "tagName": "rp",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "rp"
         },
         "rt": {
             "tagName": "rt",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "rt"
         },
         "ruby": {
             "tagName": "ruby",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "ruby"
         },
         "s": {
             "tagName": "s",
-            "defaultRole": "generic",
+            "defaultRole": "deletion",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "s"
@@ -1213,10 +1219,25 @@
         },
         "script": {
             "tagName": "script",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "script"
+        },
+        "search": {
+            "tagName": "search",
+            "defaultRole": "search",
+            "noRoleAllowed": false,
+            "anyRoleAllowed": false,
+            "allowedRoles": [
+                "form",
+                "group",
+                "none",
+                "presentation",
+                "region",
+                "search"
+            ],
+            "id": "search"
         },
         "section[accname]": {
             "tagName": "section",
@@ -1244,8 +1265,8 @@
                 "search",
                 "status",
                 "tabpanel",
-                "section",
-                "role=region"
+                "role=region",
+                "role=generic"
             ],
             "hasAccname": true,
             "id": "section[accname]"
@@ -1276,8 +1297,8 @@
                 "search",
                 "status",
                 "tabpanel",
-                "section",
-                "role=region"
+                "role=region",
+                "role=generic"
             ],
             "id": "section"
         },
@@ -1302,7 +1323,7 @@
         },
         "slot": {
             "tagName": "slot",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "slot"
@@ -1316,7 +1337,7 @@
         },
         "source": {
             "tagName": "source",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "source"
@@ -1337,7 +1358,7 @@
         },
         "style": {
             "tagName": "style",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "style"
@@ -1353,7 +1374,7 @@
             "tagName": "summary",
             "defaultRole": "summary",
             "noRoleAllowed": true,
-            "anyRoleAllowed": false,
+            "anyRoleAllowed": true,
             "id": "summary"
         },
         "sup": {
@@ -1386,7 +1407,7 @@
         },
         "template": {
             "tagName": "template",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "template"
@@ -1421,7 +1442,7 @@
         },
         "title": {
             "tagName": "title",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "title"
@@ -1503,7 +1524,7 @@
         },
         "track": {
             "tagName": "track",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": true,
             "anyRoleAllowed": false,
             "id": "track"
@@ -1537,14 +1558,14 @@
         },
         "var": {
             "tagName": "var",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": true,
             "id": "var"
         },
         "video": {
             "tagName": "video",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
@@ -1554,7 +1575,7 @@
         },
         "wbr": {
             "tagName": "wbr",
-            "defaultRole": "generic",
+            "defaultRole": "",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
             "allowedRoles": [
