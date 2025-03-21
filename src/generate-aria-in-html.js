@@ -11,9 +11,10 @@ const exportPrefix = '/* generated file, see https://github.com/opena11y/aria-in
 const exportSuffix = `;${os.EOL}`;
 
 let ariaInHTML = 'https://www.w3.org/TR/html-aria/';
-let elementInfoSelector = '#document-conformance-requirements-for-use-of-aria-attributes-in-html table.simple';
+let elementInfoSelector = '#document-conformance-requirements-for-use-of-aria-attributes-in-html table.data';
 
 function getElementInfo(dom, ariaInfo) {
+
 
   let table = dom.querySelector(elementInfoSelector);
   let elements = table.querySelectorAll('tbody tr');
@@ -94,7 +95,7 @@ function getElementInfo(dom, ariaInfo) {
     // img element special case
 
     if (tagName === 'img' && firstCell.textContent) {
-      if (firstCell.textContent.indexOf('some text') >= 0) {
+      if (firstCell.textContent.indexOf('with an accessible') >= 0) {
 
         refName += '[alt]';
 
@@ -110,7 +111,7 @@ function getElementInfo(dom, ariaInfo) {
 
       } else {
 
-        if (firstCell.textContent.indexOf('""') >= 0) {
+        if (firstCell.textContent.indexOf('with no accessible ') >= 0) {
           refName += '[emptyalt]';
           newInfo.attr1 = 'alt=""';
           newInfo.noRoleAllowed = true;

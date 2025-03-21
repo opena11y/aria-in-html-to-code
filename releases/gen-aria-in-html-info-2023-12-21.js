@@ -1,7 +1,7 @@
 /* generated file, see https://github.com/opena11y/aria-in-html-to-code */
 export const ariaInHTMLInfo = {
   title: 'ARIA in HTML',
-  status: 'W3C Recommendation 13 February 2025',
+  status: 'W3C Recommendation 21 December 2023',
   reference: 'https://www.w3.org/TR/html-aria/',
   elementInfo: {
     'a[href]': {
@@ -327,7 +327,6 @@ export const ariaInHTMLInfo = {
         'application',
         'document',
         'img',
-        'image',
         'none',
         'presentation'
       ],
@@ -611,13 +610,12 @@ export const ariaInHTMLInfo = {
         'application',
         'document',
         'img',
-        'image',
         'none',
         'presentation'
       ],
       id: 'iframe'
     },
-    img: {
+    'img[accname]': {
       tagName: 'img',
       defaultRole: 'img',
       noRoleAllowed: false,
@@ -626,7 +624,6 @@ export const ariaInHTMLInfo = {
         'button',
         'checkbox',
         'link',
-        'math',
         'menuitem',
         'menuitemcheckbox',
         'menuitemradio',
@@ -640,9 +637,37 @@ export const ariaInHTMLInfo = {
         'switch',
         'tab',
         'treeitem',
-        'img or image'
+        'img'
       ],
-      id: 'img'
+      hasAccname: true,
+      id: 'img[accname]'
+    },
+    'img[alt]': {
+      tagName: 'img',
+      defaultRole: 'img',
+      noRoleAllowed: false,
+      anyRoleAllowed: false,
+      allowedRoles: [
+        'button',
+        'checkbox',
+        'link',
+        'menuitem',
+        'menuitemcheckbox',
+        'menuitemradio',
+        'meter',
+        'option',
+        'progressbar',
+        'radio',
+        'scrollbar',
+        'separator',
+        'slider',
+        'switch',
+        'tab',
+        'treeitem',
+        'img'
+      ],
+      attr1: 'alt',
+      id: 'img[alt]'
     },
     'img[emptyalt]': {
       tagName: 'img',
@@ -754,7 +779,22 @@ export const ariaInHTMLInfo = {
       defaultRole: 'button',
       noRoleAllowed: false,
       anyRoleAllowed: false,
-      allowedRoles: [],
+      allowedRoles: [
+        'button',
+        'checkbox',
+        'gridcell',
+        'link',
+        'menuitem',
+        'menuitemcheckbox',
+        'menuitemradio',
+        'option',
+        'radio',
+        'separator',
+        'slider',
+        'switch',
+        'tab',
+        'treeitem'
+      ],
       attr1: 'type=image',
       id: 'input[type=image]'
     },
@@ -1054,8 +1094,7 @@ export const ariaInHTMLInfo = {
       allowedRoles: [
         'application',
         'document',
-        'img',
-        'image'
+        'img'
       ],
       id: 'object'
     },

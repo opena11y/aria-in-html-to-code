@@ -1,6 +1,6 @@
 {
     "title": "ARIA in HTML",
-    "status": "W3C Recommendation 13 February 2025",
+    "status": "W3C Recommendation 21 December 2023",
     "reference": "https://www.w3.org/TR/html-aria/",
     "elementInfo": {
         "a[href]": {
@@ -326,7 +326,6 @@
                 "application",
                 "document",
                 "img",
-                "image",
                 "none",
                 "presentation"
             ],
@@ -610,13 +609,12 @@
                 "application",
                 "document",
                 "img",
-                "image",
                 "none",
                 "presentation"
             ],
             "id": "iframe"
         },
-        "img": {
+        "img[accname]": {
             "tagName": "img",
             "defaultRole": "img",
             "noRoleAllowed": false,
@@ -625,7 +623,6 @@
                 "button",
                 "checkbox",
                 "link",
-                "math",
                 "menuitem",
                 "menuitemcheckbox",
                 "menuitemradio",
@@ -639,9 +636,37 @@
                 "switch",
                 "tab",
                 "treeitem",
-                "img or image"
+                "img"
             ],
-            "id": "img"
+            "hasAccname": true,
+            "id": "img[accname]"
+        },
+        "img[alt]": {
+            "tagName": "img",
+            "defaultRole": "img",
+            "noRoleAllowed": false,
+            "anyRoleAllowed": false,
+            "allowedRoles": [
+                "button",
+                "checkbox",
+                "link",
+                "menuitem",
+                "menuitemcheckbox",
+                "menuitemradio",
+                "meter",
+                "option",
+                "progressbar",
+                "radio",
+                "scrollbar",
+                "separator",
+                "slider",
+                "switch",
+                "tab",
+                "treeitem",
+                "img"
+            ],
+            "attr1": "alt",
+            "id": "img[alt]"
         },
         "img[emptyalt]": {
             "tagName": "img",
@@ -753,7 +778,22 @@
             "defaultRole": "button",
             "noRoleAllowed": false,
             "anyRoleAllowed": false,
-            "allowedRoles": [],
+            "allowedRoles": [
+                "button",
+                "checkbox",
+                "gridcell",
+                "link",
+                "menuitem",
+                "menuitemcheckbox",
+                "menuitemradio",
+                "option",
+                "radio",
+                "separator",
+                "slider",
+                "switch",
+                "tab",
+                "treeitem"
+            ],
             "attr1": "type=image",
             "id": "input[type=image]"
         },
@@ -1053,8 +1093,7 @@
             "allowedRoles": [
                 "application",
                 "document",
-                "img",
-                "image"
+                "img"
             ],
             "id": "object"
         },

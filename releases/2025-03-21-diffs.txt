@@ -1,0 +1,123 @@
+--- /Users/jongunderson/Sites/aria-in-html-to-code/releases/gen-aria-in-html-info-2023-12-21.json	Fri Mar 21 14:30:10 2025
++++ /Users/jongunderson/Sites/aria-in-html-to-code/releases/gen-aria-in-html-info.json	Fri Mar 21 14:12:18 2025
+@@ -1,6 +1,6 @@
+ {
+     "title": "ARIA in HTML",
+-    "status": "W3C Recommendation 21 December 2023",
++    "status": "W3C Recommendation 13 February 2025",
+     "reference": "https://www.w3.org/TR/html-aria/",
+     "elementInfo": {
+         "a[href]": {
+@@ -326,6 +326,7 @@
+                 "application",
+                 "document",
+                 "img",
++                "image",
+                 "none",
+                 "presentation"
+             ],
+@@ -609,12 +610,13 @@
+                 "application",
+                 "document",
+                 "img",
++                "image",
+                 "none",
+                 "presentation"
+             ],
+             "id": "iframe"
+         },
+-        "img[accname]": {
++        "img": {
+             "tagName": "img",
+             "defaultRole": "img",
+             "noRoleAllowed": false,
+@@ -623,6 +625,7 @@
+                 "button",
+                 "checkbox",
+                 "link",
++                "math",
+                 "menuitem",
+                 "menuitemcheckbox",
+                 "menuitemradio",
+@@ -636,37 +639,9 @@
+                 "switch",
+                 "tab",
+                 "treeitem",
+-                "img"
+-            ],
+-            "hasAccname": true,
+-            "id": "img[accname]"
+-        },
+-        "img[alt]": {
+-            "tagName": "img",
+-            "defaultRole": "img",
+-            "noRoleAllowed": false,
+-            "anyRoleAllowed": false,
+-            "allowedRoles": [
+-                "button",
+-                "checkbox",
+-                "link",
+-                "menuitem",
+-                "menuitemcheckbox",
+-                "menuitemradio",
+-                "meter",
+-                "option",
+-                "progressbar",
+-                "radio",
+-                "scrollbar",
+-                "separator",
+-                "slider",
+-                "switch",
+-                "tab",
+-                "treeitem",
+-                "img"
+-            ],
+-            "attr1": "alt",
+-            "id": "img[alt]"
++                "img or image"
++            ],
++            "id": "img"
+         },
+         "img[emptyalt]": {
+             "tagName": "img",
+@@ -778,22 +753,7 @@
+             "defaultRole": "button",
+             "noRoleAllowed": false,
+             "anyRoleAllowed": false,
+-            "allowedRoles": [
+-                "button",
+-                "checkbox",
+-                "gridcell",
+-                "link",
+-                "menuitem",
+-                "menuitemcheckbox",
+-                "menuitemradio",
+-                "option",
+-                "radio",
+-                "separator",
+-                "slider",
+-                "switch",
+-                "tab",
+-                "treeitem"
+-            ],
++            "allowedRoles": [],
+             "attr1": "type=image",
+             "id": "input[type=image]"
+         },
+@@ -1093,7 +1053,8 @@
+             "allowedRoles": [
+                 "application",
+                 "document",
+-                "img"
++                "img",
++                "image"
+             ],
+             "id": "object"
+         },
+@@ -1583,5 +1544,4 @@
+             "id": "wbr"
+         }
+     }
+-}
+-+}
+\ No newline at end of file
